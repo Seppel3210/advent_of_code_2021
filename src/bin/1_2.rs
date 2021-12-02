@@ -2,10 +2,7 @@
 
 fn main() {
     let input = advent_of_code_2021::input("1");
-    let depths: Vec<u32> = input
-        .lines()
-        .map(|l| l.trim().parse().unwrap())
-        .collect();
+    let depths: Vec<u32> = input.lines().map(|l| l.trim().parse().unwrap()).collect();
     let depth_sums: Vec<u32> = depths
         .windows(3)
         .map(|window| window.iter().sum())
