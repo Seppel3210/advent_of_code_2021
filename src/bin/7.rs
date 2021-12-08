@@ -1,7 +1,5 @@
 #![feature(int_abs_diff)]
 
-use std::collections::BTreeMap;
-
 fn main() {
     let input = advent_of_code_2021::input("7");
 
