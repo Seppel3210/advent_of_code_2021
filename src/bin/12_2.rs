@@ -10,7 +10,12 @@ fn main() {
         nodes.entry(a.clone()).or_insert(Vec::new()).push(b.clone());
         nodes.entry(b).or_insert(Vec::new()).push(a);
     }
-    let paths = visit_adjacent(&nodes, HashSet::new(), Cave::Start, /*Vec::new(),*/ false);
+    let paths = visit_adjacent(
+        &nodes,
+        HashSet::new(),
+        Cave::Start,
+        /*Vec::new(),*/ false,
+    );
     println!("{paths}");
 }
 
